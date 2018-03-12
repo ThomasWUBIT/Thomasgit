@@ -1,0 +1,20 @@
+ # -*- coding: utf-8 -*-
+def trim(s):
+    x=0
+    y=len(s)-1
+    if len(s)==0:
+        return s
+    while s[x]==' ':
+        x=x+1
+        if x==len(s):
+            break
+    print(x)
+    while s[y]==' ':
+        y=y-1
+        if y==0:
+            break
+    print(y)
+    if x-y-1>0:
+        return s[0:0]
+    else:
+        return s[x:y+1]
